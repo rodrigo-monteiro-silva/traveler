@@ -1,0 +1,48 @@
+.card {
+	width: 19rem;
+	margin-bottom: 2rem;
+	border-radius: 1.25rem;
+	overflow: hidden;
+	background: #ffffff;
+	border: 1.17814px solid #dce2e6;
+
+
+}
+
+.CardImageBox {
+	height: 13.125rem;
+}
+
+.card h3 {
+	margin: 0;
+	margin-bottom: 0.4rem;
+	color: #123952;
+	font-family: "Barlow";
+	font-style: normal;
+	font-weight: 600;
+
+}
+
+.CardTextBox {
+	max-height: 6.6rem;
+	padding: 1.6rem 1.6rem 1.6rem 1.7rem;
+	border-top: 1.17814px solid #dce2e6;
+  word-wrap: break-word;
+
+}
+
+.card p {
+	margin: 0;
+
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15.2151px;
+	line-height: 25px;
+
+	color: #617480;
+}
+
+.card img {
+	max-height: 100%;
+}

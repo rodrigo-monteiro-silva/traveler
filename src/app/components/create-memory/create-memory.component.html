@@ -1,0 +1,40 @@
+<body>
+  <div class="MainPageBodyForm">
+    <div class="VisualHeaderBox">
+      <div class="FormCard">
+        <div class="Retangle">
+          <h1>Salve uma memória</h1>
+        </div>
+        <div class="CityData">
+          <div class="CityBox">
+            <h3>Adicione uma foto</h3>
+            <input
+              type="file"
+              class="PhotoRetangle"
+              id="memory"
+              name="memory"
+              (change)="onFileSelected($event)"
+              [(ngModel)]="memory.photo"
+            />
+          </div>
+          <div class="CityBox">
+            <h3>Descrição da memória</h3>
+            <input
+              type="textarea"
+              placeholder="Conte como foi feita essa incrível memória"
+              class="CityDescritpionRetangle"
+              id="description"
+              name="description"
+              (change)="onFileSelected($event)"
+              [(ngModel)]="memory.description"
+            />
+          </div>
+          <div class="VisualButtonBox">
+            <button class="SubmitButton" (click)="cancel()">Cancelar</button>
+            <button class="send-button" (click)="createMemory()">salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
