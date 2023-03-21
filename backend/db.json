@@ -1,7 +1,19 @@
 {
-  "memorias": [
+  "memories": [
     {
-
+      "id": 1,
+      "photo": "",
+      "description": "Test description"
+    },
+    {
+      "id": 1,
+      "photo": "",
+      "description": "Test description 2"
+    },
+    {
+      "id": 1,
+      "photo": "",
+      "description": "Test description 3"
     }
   ]
 }

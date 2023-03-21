@@ -7,22 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListMemoryComponent implements OnInit {
   memoryList = [
-    // {
-    //   photo: '',
-    //   description: '123',
-    // },
-    // {
-    //   photo: '',
-    //   description: '8821821821',
-    // },
-    // {
-    //   photo: '',
-    //   description: '8821821821',
-    // },
-    // {
-    //   photo: '',
-    //   description: '88218218218821821821882182182188218218218821821821',
-    // },
+    {
+      photo: '',
+      description: '123',
+    },
+    {
+      photo: '',
+      description: '8821821821',
+    },
+    {
+      photo: '',
+      description: '8821821821',
+    },
+    {
+      photo: '',
+      description: '88218218218821821821882182182188218218218821821821',
+    },
   ];
   constructor() {}
 
