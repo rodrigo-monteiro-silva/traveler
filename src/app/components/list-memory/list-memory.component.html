@@ -1,0 +1,35 @@
+<app-header></app-header>
+<body>
+  <div class="MainPageBody">
+    <div class="IntroBox">
+      <div class="textBox">
+        <h1>Registre sua grande aventura</h1>
+        <h2>
+          No Traveler você salva suas melhores memórias de viagens inesquecíveis
+        </h2>
+        <button>
+          <a routerLink="/createMemory">Registre sua memória</a>
+        </button>
+      </div>
+    </div>
+    <div [ngClass]="noMemory()">
+      <div class="CardBox" *ngIf="memoryList.length > 0; else noMemories">
+        <div *ngFor="let memory of memoryList">
+          <app-memory [memory]="memory"></app-memory>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<ng-template #noMemories>
+  <div class="no-memories">
+    <div class="card">
+      <div class="CardImageBox">
+        <img src="../../../assets/images/AguasMornas.jpg" />
+      </div>
+      <div class="CardTextBox">
+        <h3>Não existem memórias salvas, crie agora uma!</h3>
+      </div>
+    </div>
+  </div>
+</ng-template>

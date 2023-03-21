@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap");
+
+body {
+	background: #f5f8fa;
+	box-sizing: border-box;
+}
+div, p, form, input, header {
+	box-sizing: border-box;
+}
+
+.MainPageBody {
+	width: 100%;
+	display: flex;
+	padding: 0 160px;
+	justify-content: center;
+	margin-top: 6rem;
+}
+
+.MainPageHeader {
+	/* padding-left: 180px; */
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+	height: 6rem;
+	left: 0px;
+	top: 0px;
+	display: flex;
+
+	/* Shapes / 01 */
+
+	background: #ffffff;
+	border-radius: 0px;
+	border: 1px solid #dce2e6;
+}
+
+.HeaderContainer {
+	width: 100%;
+	display: flex;
+	margin-left: 160px;
+	margin-right: 160px;
+}
+
+.HeaderLogo {
+	margin: 1.7rem 0 0 0;
+}
+
+.FormButtonContainer {
+	width: 100%;
+}
+
+.FormButton {
+	width: 10.8rem;
+	height: 3rem;
+	float: right;
+	margin: 1.5rem 0 0 0;
+	background: #dde9f0;
+	border-radius: 10px;
+	border: 0;
+
+	font-family: "Heebo";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.FormButton a {
+	text-decoration: none;
+	color: #115d8c;
+}
+
+.IntroBox {
+	margin-top: 6.6rem;
+	width: 100%;
+	display: flex;
+	justify-content: start;
+}
+
+.textBox {
+	max-width: 20.5rem;
+}
+
+.textBox h1 {
+	font-family: "Barlow";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 80px;
+	margin: 0 0 40px 0;
+	line-height: 74px;
+	color: #123952;
+}
+
+.textBox h2 {
+	font-family: "Heebo";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	color: #617480;
+	margin-bottom: 48px;
+}
+
+.textBox button {
+	align-items: center;
+  justify-content: center;
+	padding: 23px 56px;
+
+	width: 100%;
+	height: 4.5rem;
+	background: #f25d27;
+	border: none;
+	border-radius: 10px;
+
+	display: flex;
+	font-family: "Heebo";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.textBox a {
+	text-decoration: none;
+	color: white;
+}
+
+.visual-box-a {
+	margin-top: 5rem;
+}
+
+.visual-box-b {
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.CardBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+.card {
+	width: 19rem;
+	margin-bottom: 2rem;
+	border-radius: 1.25rem;
+	overflow: hidden;
+	background: #ffffff;
+	border: 1.17814px solid #dce2e6;
+
+}
+
+.CardImageBox {
+	height: 13.125rem;
+}
+
+.CardTextBox {
+  max-height: 6.6rem;
+  padding: 1.6rem 1.6rem 1.6rem 1.7rem;
+  border-top: 1.17814px solid #dce2e6;
+
+
+}
+
+.card h3 {
+	margin: 0;
+	margin-bottom: 0.4rem;
+	color: #123952;
+	font-family: "Barlow";
+	font-style: normal;
+	font-weight: 600;
+
+}
+
+.card p {
+	margin: 0;
+
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15.2151px;
+	line-height: 25px;
+
+	color: #617480;
+}
+
+.card img {
+	max-height: 100%;
+}
+
+
+
