@@ -1,184 +1,186 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap");
 
-
 .VisualHeaderBox {
-	margin:auto;
-	width: 80%;
+  margin: auto;
+  width: 80%;
   margin-top: 10rem;
 }
 
 .FormHeaderLogo {
-	margin: 1.7rem 0 0 0;
-	height: 2rem;
+  margin: 1.7rem 0 0 0;
+  height: 2rem;
 }
 
 .FormHeaderLogoContainer {
-	width: 100%;
-	margin-left: 160px;
-	margin-right: auto;
+  width: 100%;
+  margin-left: 160px;
+  margin-right: auto;
 }
 
 .FormCard {
-	width: 100%;
-	max-height: 60.5rem;
-	background: #ffffff;
-	border: 1.17814px solid #dce2e6;
-	border-radius: 16px;
+  width: 100%;
+  max-height: 60.5rem;
+  background: #ffffff;
+  border: 1.17814px solid #dce2e6;
+  border-radius: 16px;
 }
 
 .Retangle {
   display: flex;
-  justify-content:center;
-	text-align: center;
-	height: 8.9rem;
+  justify-content: center;
+  text-align: center;
+  height: 8.9rem;
 
-	background: linear-gradient(90deg, #f5fff5 0%, rgba(220, 245, 221, 0) 62.99%);
-	border-radius: 15px 15px 0px 0px;
+  background: linear-gradient(90deg, #f5fff5 0%, rgba(220, 245, 221, 0) 62.99%);
+  border-radius: 15px 15px 0px 0px;
 }
 
 .Retangle h1 {
-	padding: 4.4rem;
-	margin: 0;
+  padding: 4.4rem;
+  margin: 0;
 
-	align-self: center;
-	font-family: "Barlow";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 36px;
-	line-height: 34px;
+  align-self: center;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 34px;
 
-
-	color: #51b853;
+  color: #51b853;
 }
 
 .CityData {
-	width: 100%;
-	box-sizing: border-box;
-	padding: 3rem 3rem 3rem 4rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3rem 3rem 3rem 4rem;
 }
 
 .CityDataText {
-	border-bottom: 1px solid #dce2e6;
-	margin-bottom: 1.5rem;
+  border-bottom: 1px solid #dce2e6;
+  margin-bottom: 1.5rem;
 }
 
 .CityDataText h2 {
-	font-family: "Barlow";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 30px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
 
-
-	color: #123952;
+  color: #123952;
 }
 
 .CityBox {
-	margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.upload-photo-button {
+  padding: 0.7rem 2rem;
+  border: 0;
+  background: #115d8c;
+  border-radius: 10px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: right;
+  color: #ffffff;
 }
 
 .CityBox h3 {
-	font-family: "Heebo";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 22px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
 
-
-	color: #617480;
+  color: #617480;
 }
 
 input {
-	padding: 0.6rem;
-	outline: none;
+  padding: 0.6rem;
+  outline: none;
 
-	font-family: "Barlow";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 35px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
 
-
-	color: #123952;
+  color: #123952;
 }
 
 input::placeholder {
-	opacity: 0.5;
-	font-family: "Heebo";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 35px;
+  opacity: 0.5;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
 
-
-	color: #617480;
+  color: #617480;
 }
 
 .PhotoRetangle {
-	box-sizing: border-box;
-	height: 3.5rem;
-	width: 100%;
-
+  box-sizing: border-box;
+  height: 3.5rem;
+  width: 100%;
 }
 
 textarea {
-	padding: 0.6rem;
-	outline: none;
+  padding: 0.6rem;
+  outline: none;
 
-	font-family: "Barlow";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 35px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
 
-	color: #123952;
+  color: #123952;
 }
 
 textarea::placeholder {
-	opacity: 0.5;
-	font-family: "Heebo";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 35px;
+  opacity: 0.5;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
 
-
-	color: #617480;
+  color: #617480;
 }
 
 .CityDescritpionRetangle {
-	box-sizing: border-box;
-	height: 12.6rem;
-	width: 100%;
+  box-sizing: border-box;
+  height: 12.6rem;
+  width: 100%;
 
-	background: #f5f8fa;
+  background: #f5f8fa;
 
-	border: 1px solid #dce2e6;
-	border-radius: 10px;
+  border: 1px solid #dce2e6;
+  border-radius: 10px;
 }
 
 .VisualButtonBox {
-	justify-content: space-between;
-	display: flex;
+  justify-content: space-between;
+  display: flex;
 }
 
 .VisualButtonBox button {
-	padding: 0.7rem 2rem;
-	border: 0;
+  padding: 0.7rem 2rem;
+  border: 0;
 
+  background: #115d8c;
+  border-radius: 10px;
 
-	background: #115d8c;
-	border-radius: 10px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
 
-	font-family: "Heebo";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 26px;
+  text-align: right;
 
-
-	text-align: right;
-
-
-
-	color: #ffffff;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 425px) {
@@ -196,43 +198,39 @@ textarea::placeholder {
     margin-top: 10rem;
   }
 
-  .VisualButtonBox  {
+  .VisualButtonBox {
     display: flex;
     align-items: center;
     flex-direction: column;
- }
+  }
 
   .VisualButtonBox button {
     padding: 0.5rem 2rem;
     border: 0;
     margin-bottom: 10px;
- }
+  }
 
- .send-button{
-  padding: 0.7rem 2rem;
-	border: 0;
+  .send-button {
+    padding: 0.7rem 2rem;
+    border: 0;
 
+    background: #115d8c;
+    border-radius: 10px;
 
-	background: #115d8c;
-	border-radius: 10px;
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
 
-	font-family: "Heebo";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 26px;
+    text-align: right;
 
+    color: #ffffff;
 
-	text-align: right;
-
-
-
-	color: #ffffff;
-
-  width: 8rem;
-  display: flex;
-  justify-content: center;
- }
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -242,41 +240,37 @@ textarea::placeholder {
     margin-top: 10rem;
   }
 
-  .VisualButtonBox  {
+  .VisualButtonBox {
     display: flex;
     align-items: center;
     flex-direction: column;
- }
+  }
 
   .VisualButtonBox button {
     padding: 0.5rem 2rem;
     border: 0;
     margin-bottom: 10px;
- }
+  }
 
- .send-button{
-  padding: 0.7rem 2rem;
-	border: 0;
+  .send-button {
+    padding: 0.7rem 2rem;
+    border: 0;
 
+    background: #115d8c;
+    border-radius: 10px;
 
-	background: #115d8c;
-	border-radius: 10px;
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
 
-	font-family: "Heebo";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 26px;
+    text-align: right;
 
+    color: #ffffff;
 
-	text-align: right;
-
-
-
-	color: #ffffff;
-
-  width: 8rem;
-  display: flex;
-  justify-content: center;
- }
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+  }
 }

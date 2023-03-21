@@ -1,3 +1,5 @@
+import { MemoryService } from './../memory.service';
+import { Memory } from './../memory';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -9,24 +11,27 @@ import { Router } from '@angular/router';
 })
 export class CreateMemoryComponent implements OnInit {
   selectedPhoto = null;
-  memory = {
-    id: '1',
-    photo: '',
-    description: 'Teste',
+  memory: Memory = {
+    photo: null,
+    description: '',
   };
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(
+    private http: HttpClient,
+    private router: Router,
+    private service: MemoryService
+  ) {}
 
   ngOnInit(): void {}
-
-  onFileSelected(event) {
-    this.selectedPhoto = event.target.files[0];
-  }
 
   onUpload() {}
 
   createMemory() {
-    alert('Novo pensamento criado');
+    this.service.create(this.memory).subscribe((resp) => {
+      if (resp) {
+        this.router.navigate(['/listMemory']);
+      }
+    });
   }
 
   cancel() {

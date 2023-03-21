@@ -1,4 +1,6 @@
+import { Memory } from './../memory';
 import { Component, OnInit } from '@angular/core';
+import { MemoryService } from '../memory.service';
 
 @Component({
   selector: 'app-list-memory',
@@ -6,27 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-memory.component.css', '/src/responsive.css'],
 })
 export class ListMemoryComponent implements OnInit {
-  memoryList = [
-    {
-      photo: '',
-      description: '123',
-    },
-    {
-      photo: '',
-      description: '8821821821',
-    },
-    {
-      photo: '',
-      description: '8821821821',
-    },
-    {
-      photo: '',
-      description: '88218218218821821821882182182188218218218821821821',
-    },
-  ];
-  constructor() {}
+  memoryList: Memory[] = [];
+  constructor(private service: MemoryService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.service.list().subscribe((memoryList) => {
+      this.memoryList = memoryList;
+    });
+  }
 
   noMemory(): string {
     if (this.memoryList.length <= 0) {

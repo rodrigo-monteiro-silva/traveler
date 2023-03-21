@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Memory } from '../memory';
 
 @Component({
   selector: 'app-memory',
@@ -6,8 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./memory.component.css'],
 })
 export class MemoryComponent implements OnInit {
-  @Input() memory = {
-    photo: '',
+  @Input() memory: Memory = {
+    photo: null,
     description: 'Teste',
   };
 

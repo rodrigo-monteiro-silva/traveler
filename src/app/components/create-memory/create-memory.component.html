@@ -9,13 +9,20 @@
           <div class="CityBox">
             <h3>Adicione uma foto</h3>
             <input
+              #inputPhotoUpload
               type="file"
               class="PhotoRetangle"
               id="memory"
               name="memory"
-              (change)="onFileSelected($event)"
               [(ngModel)]="memory.photo"
+              hidden="true"
             />
+            <button
+              class="upload-photo-button"
+              (click)="inputPhotoUpload.click()"
+            >
+              Foto
+            </button>
           </div>
           <div class="CityBox">
             <h3>Descrição da memória</h3>
@@ -25,7 +32,6 @@
               class="CityDescritpionRetangle"
               id="description"
               name="description"
-              (change)="onFileSelected($event)"
               [(ngModel)]="memory.description"
             />
           </div>
