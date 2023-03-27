@@ -1,5 +1,5 @@
 export interface Memory {
   id?: number;
-  photo: File | undefined;
+  photo: File;
   description: string;
 }

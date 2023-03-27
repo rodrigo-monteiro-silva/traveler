@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-memory.component.css', '/src/responsive.css'],
 })
 export class CreateMemoryComponent implements OnInit {
-  selectedPhoto = null;
+  selectedFile = null;
   memory: Memory = {
     photo: null,
     description: '',
@@ -24,7 +24,19 @@ export class CreateMemoryComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onUpload() {}
+  onFileSelected(event: Memory) {
+    this.selectedFile = <File>event.photo;
+  }
+
+  onUpload() {
+    const fd = new FormData();
+    fd.append('photo', this.selectedFile);
+    this.http
+      .post<Memory>(`http://localhost:4080/${this.memory.photo}`, fd)
+      .subscribe((res) => {
+        console.log(res);
+      });
+  }
 
   createMemory() {
     this.service.create(this.memory).subscribe((resp) => {

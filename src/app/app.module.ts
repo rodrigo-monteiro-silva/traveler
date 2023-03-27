@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MemoryComponent } from './components/memory/memory.component';
+import { DeleteMemoryComponent } from './components/delete-memory/delete-memory.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MemoryComponent } from './components/memory/memory.component';
     CreateMemoryComponent,
     ListMemoryComponent,
     MemoryComponent,
+    DeleteMemoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

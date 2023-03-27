@@ -1,6 +1,12 @@
-import { HttpClient } from '@angular/common/http';
+import {
+  HttpClient,
+  HttpEvent,
+  HttpErrorResponse,
+  HttpEventType,
+} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { Memory } from './memory';
 
 @Injectable({
@@ -17,5 +23,15 @@ export class MemoryService {
 
   create(memory: Memory): Observable<Memory> {
     return this.http.post<Memory>(this.API, memory);
+  }
+
+  delete(id: number): Observable<Memory> {
+    const url = `${this.API}/${id}`;
+    return this.http.delete<Memory>(url);
+  }
+
+  findById(id: number): Observable<Memory> {
+    const url = `${this.API}/${id}`;
+    return this.http.get<Memory>(url);
   }
 }

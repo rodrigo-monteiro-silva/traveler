@@ -9,7 +9,7 @@ import { Memory } from '../memory';
 export class MemoryComponent implements OnInit {
   @Input() memory: Memory = {
     photo: null,
-    description: 'Teste',
+    description: '',
   };
 
   constructor() {}

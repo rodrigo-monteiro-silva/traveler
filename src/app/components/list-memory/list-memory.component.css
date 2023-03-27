@@ -125,6 +125,13 @@ div, p, form, input, header {
 	color: white;
 }
 
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+}
+
 .visual-box-a {
 	margin-top: 5rem;
 }
@@ -158,12 +165,35 @@ div, p, form, input, header {
 }
 
 .CardTextBox {
-  max-height: 6.6rem;
+  max-height: fit-content;
   padding: 1.6rem 1.6rem 1.6rem 1.7rem;
   border-top: 1.17814px solid #dce2e6;
-
-
 }
+
+.CardTextBox button {
+  position: inherit;
+  padding: 0.7rem 2rem;
+  border: 0;
+
+  background: #115d8c;
+  border-radius: 10px;
+
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: right;
+
+  color: #ffffff;
+
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .card h3 {
 	margin: 0;

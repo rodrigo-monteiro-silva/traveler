@@ -1,8 +1,11 @@
 <div class="card">
   <div class="CardImageBox">
-    <img src="./public/Florianopolis.jpg" />
+    <div class="img">{{ memory.photo }}</div>
   </div>
   <div class="CardTextBox">
     <h3>{{ memory.description }}</h3>
+    <button class="delete-button" routerLink="/deleteMemory/{{ memory.id }}">
+      X
+    </button>
   </div>
 </div>
