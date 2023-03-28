@@ -24,7 +24,7 @@ export class CreateMemoryComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onFileSelected(event: Memory) {
+  onFileSelected(event: any) {
     this.selectedFile = <File>event.photo;
   }
 

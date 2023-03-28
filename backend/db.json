@@ -1,62 +1,14 @@
 {
   "memories": [
     {
+      "photo": "C:\\fakepath\\download.jpeg",
+      "description": "777777744",
       "id": 2
     },
     {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "photo": "C:\\fakepath\\416-1.jpg",
-      "description": "ddfwsdsaasdads",
-      "id": 6
-    },
-    {
-      "photo": "C:\\fakepath\\128x128.jpg",
-      "description": "dadsadsadsads",
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "photo": "C:\\fakepath\\128x128.jpg",
-      "description": "dasdasdasdas",
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "photo": "C:\\fakepath\\416-1.jpg",
-      "description": "dasdassadasd",
-      "id": 12
-    },
-    {
-      "photo": "C:\\fakepath\\416-1.jpg",
-      "description": "sdadsadsasd",
-      "id": 13
-    },
-    {
-      "photo": "C:\\fakepath\\2018_Audi_A4_Sport_TDi_Quattro_S-A_2.0.jpg",
-      "description": "sdadsadsasddsasdasad",
-      "id": 14
-    },
-    {
-      "photo": "C:\\fakepath\\2018_Audi_A4_Sport_TDi_Quattro_S-A_2.0.jpg",
-      "description": "daadsadsads",
-      "id": 15
-    },
-    {
-      "photo": "C:\\fakepath\\2018_Audi_A4_Sport_TDi_Quattro_S-A_2.0.jpg",
-      "description": "asddddddddddd",
-      "id": 16
+      "photo": "C:\\fakepath\\download.jpeg",
+      "description": "545454",
+      "id": 3
     }
   ]
 }

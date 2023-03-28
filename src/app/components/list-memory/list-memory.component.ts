@@ -1,5 +1,5 @@
 import { Memory } from './../memory';
-import { Component, OnInit } from '@angular/core';
+import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { MemoryService } from '../memory.service';
 
 @Component({
@@ -9,11 +9,13 @@ import { MemoryService } from '../memory.service';
 })
 export class ListMemoryComponent implements OnInit {
   memoryList: Memory[] = [];
+
   constructor(private service: MemoryService) {}
 
   ngOnInit(): void {
     this.service.list().subscribe((memoryList) => {
       this.memoryList = memoryList;
+      console.log(this.memoryList);
     });
   }
 

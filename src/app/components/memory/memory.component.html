@@ -1,6 +1,8 @@
 <div class="card">
   <div class="CardImageBox">
-    <div class="img">{{ memory.photo }}</div>
+    <div class="img">
+      <img [src]="service.getImageToSrc(memory.photo)" />
+    </div>
   </div>
   <div class="CardTextBox">
     <h3>{{ memory.description }}</h3>

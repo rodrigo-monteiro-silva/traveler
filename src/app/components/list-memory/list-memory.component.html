@@ -15,7 +15,7 @@
     <div [ngClass]="noMemory()">
       <div class="CardBox" *ngIf="memoryList.length > 0; else noMemories">
         <div *ngFor="let memory of memoryList">
-          <app-memory [memory]="memory"></app-memory>
+          <card-memory [memory]="memory"></card-memory>
         </div>
       </div>
     </div>

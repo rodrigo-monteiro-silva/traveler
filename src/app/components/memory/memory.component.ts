@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Memory } from '../memory';
+import { MemoryService } from '../memory.service';
 
 @Component({
-  selector: 'app-memory',
+  selector: 'card-memory',
   templateUrl: './memory.component.html',
   styleUrls: ['./memory.component.css'],
 })
@@ -12,7 +13,7 @@ export class MemoryComponent implements OnInit {
     description: '',
   };
 
-  constructor() {}
+  constructor(public service: MemoryService) {}
 
   ngOnInit(): void {}
 }
