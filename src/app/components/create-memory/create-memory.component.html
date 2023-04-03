@@ -14,8 +14,6 @@
               class="PhotoRetangle"
               id="memory"
               name="memory"
-              [(ngModel)]="memory.photo"
-              (change)="onFileSelected($event)"
               hidden="true"
             />
             <button
@@ -38,13 +36,7 @@
           </div>
           <div class="VisualButtonBox">
             <button class="SubmitButton" (click)="cancel()">Cancelar</button>
-            <button
-              class="send-button"
-              (click)="createMemory()"
-              (click)="onUpload()"
-            >
-              salvar
-            </button>
+            <button class="send-button" (click)="createMemory()">salvar</button>
           </div>
         </div>
       </div>

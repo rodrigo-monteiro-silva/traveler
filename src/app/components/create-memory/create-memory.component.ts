@@ -16,27 +16,9 @@ export class CreateMemoryComponent implements OnInit {
     description: '',
   };
 
-  constructor(
-    private http: HttpClient,
-    private router: Router,
-    private service: MemoryService
-  ) {}
+  constructor(private router: Router, private service: MemoryService) {}
 
   ngOnInit(): void {}
-
-  onFileSelected(event: any) {
-    this.selectedFile = <File>event.photo;
-  }
-
-  onUpload() {
-    const fd = new FormData();
-    fd.append('photo', this.selectedFile);
-    this.http
-      .post<Memory>(`http://localhost:4080/${this.memory.photo}`, fd)
-      .subscribe((res) => {
-        console.log(res);
-      });
-  }
 
   createMemory() {
     this.service.create(this.memory).subscribe((resp) => {

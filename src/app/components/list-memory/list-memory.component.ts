@@ -15,7 +15,6 @@ export class ListMemoryComponent implements OnInit {
   ngOnInit(): void {
     this.service.list().subscribe((memoryList) => {
       this.memoryList = memoryList;
-      console.log(this.memoryList);
     });
   }
 
